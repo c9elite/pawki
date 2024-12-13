@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pawki - 宠物零食店</title>
+  <title>Pawki - Quality Dog Treats</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Pawki 宠物零食店</h1>
+    <!-- 使用本地pawki_logo.png  -->
+    <img src="images/pawki_logo.png" alt="Pawki Logo" class="logo" />
+    <h1>Pawki Dog Treats</h1>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#">主页</a></li>
-      <li><a href="#products">商品</a></li>
-      <li><a href="#contact">联系我们</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Treats</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </nav>
 
   <section id="intro">
-    <h2>欢迎来到 Pawki</h2>
-    <p>我们为您的宠物提供优质、美味、健康的零食。</p>
+    <h2>Welcome to Pawki</h2>
+    <p>We provide high-quality, healthy, and delicious freeze-dried treats for your beloved dogs.</p>
   </section>
 
   <section id="products">
-    <h2>热门商品</h2>
+    <h2>Our Featured Treats</h2>
     <div class="product-list" id="product-list">
-      <!-- 商品列表通过JavaScript动态加载 -->
+      <!-- Products will be dynamically loaded from products.json -->
     </div>
   </section>
 
   <section id="contact">
-    <h2>联系我们</h2>
-    <p>如有疑问，请发送邮件至：<a href="mailto:service@pawki.com">service@pawki.com</a></p>
+    <h2>Get in Touch</h2>
+    <p>For inquiries, please email: <a href="mailto:service@pawki.com">service@pawki.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2024 Pawki 宠物零食店</p>
+    <p>&copy; 2024 Pawki Dog Treats</p>
   </footer>
 
   <script>
-    // 页面加载后从后端获取商品数据并展示
     document.addEventListener('DOMContentLoaded', () => {
       fetch('/api/products')
         .then(response => response.json())
@@ -52,12 +53,12 @@
               <img src="${product.image}" alt="${product.name}">
               <h3>${product.name}</h3>
               <p class="description">${product.description}</p>
-              <p class="price">价格: ¥${product.price}</p>
+              <p class="price">Price: $${product.price}</p>
             </div>
           `).join('');
         })
         .catch(err => {
-          console.error('获取商品数据出错:', err);
+          console.error('Error fetching products:', err);
         });
     });
   </script>
