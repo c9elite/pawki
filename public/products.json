@@ -1,0 +1,20 @@
+[
+  {
+    "name": "美味鸡肉条",
+    "description": "适合所有年龄段犬类，富含优质蛋白质和维生素。",
+    "price": 15,
+    "image": "https://via.placeholder.com/200x200?text=鸡肉条"
+  },
+  {
+    "name": "香脆牛肉干",
+    "description": "低脂高蛋白，为狗狗提供丰富营养和嚼劲。",
+    "price": 20,
+    "image": "https://via.placeholder.com/200x200?text=牛肉干"
+  },
+  {
+    "name": "猫咪冻干三文鱼块",
+    "description": "适合猫咪的美味零食，不添加人工色素和防腐剂。",
+    "price": 25,
+    "image": "https://via.placeholder.com/200x200?text=三文鱼块"
+  }
+]
