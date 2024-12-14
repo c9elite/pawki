@@ -53,7 +53,7 @@ body {
 }
 
 .navbar .logo {
-  max-width: 80px;
+  max-width: 100px; /* 调大Logo尺寸 */
 }
 
 .navbar ul {
@@ -68,7 +68,7 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.2em; /* 增大菜单字体 */
   position: relative;
   transition: color 0.3s;
 }
@@ -100,7 +100,7 @@ body {
 }
 
 .hero-content p {
-  white-space: nowrap;
+  /* 移除white-space: nowrap;以便小屏下自动换行 */
   font-size: 1.2em;
   margin-bottom: 30px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.3);
@@ -158,7 +158,7 @@ body {
   color: #555;
 }
 
-/* Philosophy Section with background image */
+/* Philosophy Section */
 #philosophy {
   text-align: center;
   padding: 80px 20px;
@@ -341,7 +341,7 @@ body {
   font-size: 1.1em;
 }
 
-/* Happy Friends Section with background image */
+/* Happy Friends Section */
 #happy-friends {
   text-align: center;
   padding: 80px 20px;
@@ -436,4 +436,29 @@ footer {
 
 .back-to-top:hover {
   background: #cc7000;
+}
+
+/* 小屏幕优化 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 1.1em; /* 手机端略微小一点字体 */
+  }
+
+  .hero-content p {
+    white-space: normal; /* 小屏正常换行 */
+  }
 }
