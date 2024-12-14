@@ -3,44 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pawki - Quality Dog Treats</title>
+  <title>Pawki - Organic Dog Treats</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <!-- 使用本地pawki_logo.png  -->
-    <img src="images/pawki_logo.png" alt="Pawki Logo" class="logo" />
-    <h1>Pawki Dog Treats</h1>
-  </header>
+  <div class="hero">
+    <nav class="navbar" data-aos="fade-down">
+      <img src="images/pawki_logo.png" alt="Pawki Logo" class="logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Treats</a></li>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Pawki Dog Treats</h1>
+      <p>All Organic, All Natural - Because Your Dog Deserves the Best</p>
+      <a href="#products" class="btn hero-btn">Shop Now</a>
+    </div>
+  </div>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#products">Treats</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <section id="intro">
+  <section id="intro" data-aos="fade-up">
     <h2>Welcome to Pawki</h2>
-    <p>We provide high-quality, healthy, and delicious freeze-dried treats for your beloved dogs.</p>
+    <p>
+      We craft our treats with certified organic vegetables and premium grass-fed meats, ensuring every bite is packed with flavor and nutrition.
+      Your pet deserves nothing less than the best nature has to offer.
+    </p>
   </section>
 
-  <section id="products">
-    <h2>Our Featured Treats</h2>
-    <div class="product-list" id="product-list">
-      <!-- Products will be dynamically loaded from products.json -->
+  <section id="philosophy" data-aos="fade-up">
+    <h2>Our Philosophy</h2>
+    <p>
+      At Pawki, we believe in celebrating the bond between humans and their beloved companions. Our treats are carefully sourced, sustainably produced, and thoughtfully created for both cats and dogs. We honor the health and happiness of every animal, ensuring that each product we offer is a step towards a more natural, vibrant life.
+    </p>
+  </section>
+
+  <section id="ingredients" data-aos="fade-up">
+    <h2>Our Organic Ingredients</h2>
+    <div class="ingredients-grid">
+      <div class="ingredient-card" data-aos="fade-up">
+        <img src="images/organic_veggies.jpg" alt="Organic Vegetables">
+        <h3>Organic Vegetables</h3>
+        <p>Fresh, nutrient-dense produce from certified organic farms, adding essential vitamins and minerals.</p>
+      </div>
+      <div class="ingredient-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/grass_fed_beef.jpg" alt="Grass-Fed Beef">
+        <h3>Grass-Fed Beef</h3>
+        <p>Tender, high-quality protein sourced from humanely raised cattle, free from hormones and antibiotics.</p>
+      </div>
+      <div class="ingredient-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/free_range_chicken.jpg" alt="Free-Range Chicken">
+        <h3>Free-Range Chicken</h3>
+        <p>Lean, delicious meat from chickens raised in open pastures, ensuring a pure and savory flavor.</p>
+      </div>
+
+      <!-- 新增的三张卡片 -->
+      <div class="ingredient-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/headless_shrimp.jpg" alt="Fresh Headless Shrimp">
+        <h3>Fresh Headless Shrimp</h3>
+        <p>Wild-caught and carefully cleaned, offering a delicate seafood flavor and rich minerals that benefit both cats and dogs.</p>
+      </div>
+      <div class="ingredient-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/deep_sea_fish.jpg" alt="Deep Sea Fish">
+        <h3>Deep Sea Fish</h3>
+        <p>Abundant in omega-3 fatty acids and essential nutrients, sustainably sourced from the deep ocean waters.</p>
+      </div>
+      <div class="ingredient-card" data-aos="fade-up" data-aos-delay="500">
+        <img src="images/organic_eggs.jpg" alt="Organic Eggs">
+        <h3>Organic Eggs</h3>
+        <p>Pasture-raised and full of protein, these eggs bring a creamy texture and nutritional boost to our treats.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>For inquiries, please email: <a href="mailto:service@pawki.com">service@pawki.com</a></p>
+  <section id="products" data-aos="fade-up">
+    <h2>Our Featured Treats</h2>
+    <div class="product-list" id="product-list"></div>
   </section>
 
-  <footer>
-    <p>&copy; 2024 Pawki Dog Treats</p>
+  <section id="happy-friends" data-aos="fade-up">
+    <h2>Happy Friends</h2>
+    <p>
+      Nothing brings us more joy than seeing content, healthy pets savoring our treats. From playful kittens to loyal hounds, our customers come in all shapes, sizes, and species. Join the Pawki family, and let your furry companions bask in the goodness we lovingly prepare just for them.
+    </p>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Get in Touch</h2>
+    <p>
+      For inquiries or feedback, please email: <a href="mailto:service@pawki.com">service@pawki.com</a>
+    </p>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2024 Pawki - Organic & Natural Pet Treats</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- AOS Initialization -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -48,18 +127,37 @@
         .then(response => response.json())
         .then(products => {
           const productList = document.getElementById('product-list');
-          productList.innerHTML = products.map(product => `
-            <div class="product-card">
-              <img src="${product.image}" alt="${product.name}">
+          productList.innerHTML = products.map((product, index) => `
+            <div class="product-card" data-aos="fade-up" data-aos-delay="${index * 100}">
+              <div class="product-image-container">
+                <img src="${product.image}" alt="${product.name}">
+                <div class="image-overlay">
+                  <span>Premium Quality</span>
+                </div>
+              </div>
               <h3>${product.name}</h3>
               <p class="description">${product.description}</p>
-              <p class="price">Price: $${product.price}</p>
+              <p class="price">Price: ${product.price}</p>
             </div>
           `).join('');
         })
         .catch(err => {
           console.error('Error fetching products:', err);
         });
+
+      // Back to top button
+      const backToTopBtn = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add('show');
+        } else {
+          backToTopBtn.classList.remove('show');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
   </script>
 </body>

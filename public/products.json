@@ -1,20 +1,38 @@
 [
   {
-    "name": "Freeze-Dried Chicken Strips",
-    "description": "High-protein, single-ingredient chicken treats that are perfect for dogs of all ages.",
-    "price": 25,
-    "image": "images/dog_freeze_dried.jpg"
+    "name": "Harvest Moon Chicken & Veggie Mooncakes",
+    "description": "Handcrafted with premium chicken and organic vegetables, these nourishing mooncakes bring delightful flavor and balanced nutrition to both cats and dogs.",
+    "price": "$24.99/lbs",
+    "image": "images/food1.jpg"
   },
   {
-    "name": "Crunchy Beef Jerky Bites",
-    "description": "Low-fat, high-protein beef snacks that provide a satisfying chew.",
-    "price": 27,
-    "image": "images/dog_treat_1.jpg"
+    "name": "Garden-Fresh Chicken & Veggie Biscuits",
+    "description": "Baked to crisp perfection with succulent chicken and vibrant organic vegetables, these low-fat biscuits offer a wholesome, savory crunch that delights both feline and canine companions.",
+    "price": "$22.99/lbs",
+    "image": "images/food2.jpg"
   },
   {
-    "name": "Salmon & Sweet Potato Cookies",
-    "description": "Sweet potato cookies with salmon, rich in omega-3 and vitamins.",
-    "price": 28,
-    "image": "images/dog_treat_2.jpg"
+    "name": "Grass-Fed Beef & Veggie Macarons",
+    "description": "Combining tender, grass-fed beef with nutrient-rich greens, these airy macarons provide a gourmet treat that pets savor in every bite, ensuring pure enjoyment for cats and dogs alike.",
+    "price": "$28.99/lbs",
+    "image": "images/food3.jpg"
+  },
+  {
+    "name": "Ocean-Kissed Shrimp Biscuits",
+    "description": "Crisp and flavorful shrimp biscuits enriched with oceanic minerals, perfect for both cats and dogs who crave a taste of the sea.",
+    "price": "$29.99/lbs",
+    "image": "images/food4.jpg"
+  },
+  {
+    "name": "GreenCrunch Veggie Dental Sticks",
+    "description": "Crafted from fibrous organic vegetables, these dental sticks support oral health, helping reduce plaque and ensure happier smiles for your beloved companions.",
+    "price": "$19.99/lbs",
+    "image": "images/food5.jpg"
+  },
+  {
+    "name": "Heart-Healthy Sea Fish Crispies",
+    "description": "Infused with heart-supportive omega-3s from fresh sea fish, these light, crunchy crispies are a nutritious delight that pets love to nibble.",
+    "price": "$29.99/lbs",
+    "image": "images/food6.jpg"
   }
 ]
